@@ -1,0 +1,14 @@
+@import "../../../assets/sass/variables.scss";
+button.btn {
+  border-radius: 30px;
+  padding: 6px 20px;
+  margin-right: 13px;
+  min-width: 80px;
+  border: 2px solid #287045;
+  font-weight: 500;
+  color: #fff;
+  &:hover {
+    background-color: $secondary;
+    color: #000;
+  }
+}
