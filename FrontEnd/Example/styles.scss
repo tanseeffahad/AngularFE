@@ -1,0 +1,142 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "../src/assets/sass/fonts.scss";
+@import "../src/assets/sass/variables.scss";
+@import "../src/assets/sass/default.scss";
+@media (min-width: 768px) {
+  .container {
+    max-width: 1010px;
+    position: relative;
+  }
+}
+
+.filled {
+  .btn {
+    background: #287045;
+  }
+}
+
+body,
+.site-header {
+  .mainsearch {
+    &.ng-select .ng-select-container {
+      color: #676767;
+      background-color: #fff;
+      border-radius: 50px;
+      border: 1px solid #ccc;
+      min-height: 60px;
+      padding: 8px 70px;
+      padding-right: 10px;
+      align-items: center;
+      box-shadow: 0px 2px 10px 2px #ccc;
+      margin-top: 25px;
+  
+      font-size: 18px;
+      input {
+        padding: 8px 70px !important;
+        padding-right: 10px !important;
+      }
+    }
+    &.ng-select.ng-select-opened.ng-select-bottom > .ng-select-container {
+      border-radius: 20px 20px 0 0px;
+    }
+    &.ng-select .ng-arrow-wrapper .ng-arrow {
+      border: 0;
+    }
+    &.ng-select .ng-arrow-wrapper {
+      position: absolute;
+      left: 22px;
+      top: 6px;
+    }
+    &.ng-select .ng-arrow-wrapper .ng-arrow:before {
+      content: "\f002";
+      font-family: "FontAwesome";
+      color: #bdbdbd;
+      font-size: 29px;
+    }
+    &.ng-select .ng-clear-wrapper .ng-clear {
+      font-size: 39px;
+    }
+    
+  }
+  &.sticky {
+    .ng-select {
+      .ng-select-container {
+        min-height: 42px;
+      }
+      .ng-arrow-wrapper .ng-arrow:before {
+        font-size: 24px;
+      }
+    }
+  }
+}
+app-footer {
+  background: #1f1f1f;
+  display: block;
+  color: #fff;
+  padding: 47px 0 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.site-header {
+  &.sticky {
+    .header-details {
+      display: none;
+    }
+  }
+}
+
+.main-content {
+  padding: 30px 0;
+}
+.right-side .ng-select .ng-arrow-wrapper {
+  right: 9px;
+  left: auto;
+  background: #19743d;
+  width: 45px;
+  border-radius: 24px;
+  height: 45px;
+}
+.right-side .ng-select .ng-arrow-wrapper .ng-arrow,
+.right-side .ng-select .ng-arrow-wrapper .ng-arrow:before {
+  display: contents;
+  color: #fff;
+}
+body .right-side .ng-select .ng-select-container input {
+  padding-left: 0 !important;
+}
+body .right-side .ng-select.ng-select-single .ng-select-container {
+  padding-left: 10px;
+}
+body .right-side .ng-select .ng-clear-wrapper {
+  left: -60px;
+}
+
+.btn-green {
+  @include green-gradiant;
+  color: #fff;
+}
+.btn-small {
+  border-radius: 28px;
+  line-height: 1;
+}
+.form-select {
+  border-radius: 10px;
+  font-family: "FontAwesome", "Segoe UI";
+}
+.btn-outline {
+  border: 1px solid #ccc;
+  border-radius: 11px;
+  vertical-align: top;
+}
+.without-sticky .site-header app-search {
+  display: none !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+.search-list-page #chartdiv {
+  height: 300px !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
